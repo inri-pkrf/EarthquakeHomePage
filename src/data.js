@@ -5,3 +5,6 @@ export const APPS = [
   { id: 'simulation', icon: 'house', title: 'סימולציית רעידת אדמה', sub: 'התנסו בסימולציה', url: 'https://inri-pkrf.github.io/quake-game/', accent: 'var(--ok)' },
   { id: 'prepare', icon: 'kit', title: 'היערכות לרעידת אדמה', sub: 'תרגלו את ההיערכות', url: 'https://inri-pkrf.github.io/raad-game/', accent: 'var(--bone)' },
 ];
+
+// כפתור הבית בעמוד הראשי – מוביל לשאר המוצרים
+export const MORE_URL = 'https://inri-pkrf.github.io/Totem-Pro-Final/#more-products';

@@ -11,6 +11,9 @@ button { font: inherit; color: inherit; border: 0; cursor: pointer; background: 
 .topbar { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 1.8rem 3.4rem; border-bottom: .2rem solid var(--dust); }
 .logo { height: 7rem; display: block; }
 .fsbtn { font-size: 2.2rem; font-weight: 800; padding: 1.2rem 2.2rem; min-height: 6rem; border: .25rem solid var(--bone); }
+.tools { display: flex; align-items: center; gap: 2rem; }
+.morebtn { width: 7.4rem; height: 7.4rem; border-radius: 50%; background: #eaaf79; display: grid; place-items: center; transition: transform .12s; }
+.morebtn svg { width: 4.6rem; height: 4.6rem; } .morebtn:active { transform: scale(.94); }
 .fsbtn:active { background: var(--dust); }
 
 .screen { position: relative; flex: 1; min-height: 0; overflow: hidden; padding: 3.4rem 3.4rem 4rem; display: flex; flex-direction: column; gap: 2rem; animation: land .55s cubic-bezier(.2, .8, .3, 1); }

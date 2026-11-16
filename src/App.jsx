@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import logo from './assets/logo.png';
-import { APPS } from './data.js';
+import { APPS, MORE_URL } from './data.js';
 
 const Home = () => (
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 12h3v9h5v-6h4v6h5v-9h3z" /></svg>
@@ -51,7 +51,14 @@ export default function App() {
       <div className="tape" aria-hidden="true" />
       <header className="topbar">
         <img className="logo" src={logo} alt="המכללה הלאומית לאיתנות ישראלית" />
-        {document.fullscreenEnabled && <button className="fsbtn" onClick={toggleFull}>{full ? 'יציאה ממסך מלא' : 'מסך מלא'}</button>}
+        <div className="tools">
+          <a className="morebtn" href={MORE_URL} aria-label="למוצרים נוספים">
+            <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3.5 11.5 12 4l8.5 7.5" /><path d="M5.5 10v9.5h13V10" /><path d="M10 19.5v-4.2a2 2 0 0 1 4 0v4.2" />
+            </svg>
+          </a>
+          {document.fullscreenEnabled && <button className="fsbtn" onClick={toggleFull}>{full ? 'יציאה ממסך מלא' : 'מסך מלא'}</button>}
+        </div>
       </header>
       <main className="screen">
         <svg className="crack" viewBox="0 0 100 200" preserveAspectRatio="none" aria-hidden="true">
