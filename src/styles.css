@@ -5,7 +5,7 @@ html, body, #root { height: 100%; }
 body { background: var(--ink); color: var(--bone); direction: rtl; font-family: 'Assistant', system-ui, sans-serif; user-select: none; overscroll-behavior: none; overflow: hidden; }
 button { font: inherit; color: inherit; border: 0; cursor: pointer; background: none; touch-action: manipulation; }
 
-.stage { position: relative; height: 100dvh; width: 100%; max-width: 62rem; margin-inline: auto; display: flex; flex-direction: column; overflow: hidden;
+.stage { position: relative; height: 100dvh; width: 100%; display: flex; flex-direction: column; overflow: hidden;
   background: radial-gradient(120% 60% at 50% 0%, #2a2623 0%, transparent 60%), repeating-linear-gradient(0deg, #161413 0 3px, #181615 3px 6px); }
 .tape { flex: none; height: 1.6rem; background: repeating-linear-gradient(-45deg, var(--amber) 0 1.6rem, var(--ink) 1.6rem 3.2rem); }
 .topbar { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 1.8rem 3.4rem; border-bottom: .2rem solid var(--dust); }
