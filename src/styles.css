@@ -1,4 +1,4 @@
-:root { --ink: #131211; --concrete: #211f1d; --dust: #34302c; --bone: #f2eee5; --red: #e2252b; --amber: #ffc21a; --ok: #52d18a; --head: 'Karantina', 'Assistant', sans-serif; }
+:root { --ink: #131211; --concrete: #211f1d; --dust: #34302c; --bone: #f2eee5; --red: #e28025; --amber: #ffc21a; --ok: #52d18a; --head: 'Karantina', 'Assistant', sans-serif; }
 * { box-sizing: border-box; margin: 0; -webkit-tap-highlight-color: transparent; }
 html { font-size: clamp(5px, min(1.3vw, .73vh), 22px); } /* 1rem = 14px בטוטם 1080x1920 */
 html, body, #root { height: 100%; }
